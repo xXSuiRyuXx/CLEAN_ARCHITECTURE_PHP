@@ -44,7 +44,11 @@
                             <th><?php echo ($i + 1) ?></th>
                             <th><?php echo $s->getCode(); ?></th>
                             <th><?php echo $s->getName(); ?></th>
-                            <th><?php echo $s->getEmail(); ?></th>
+                            <th>
+                                <a href="mailto:<?= $s->getEmail(); ?>?subject=Solicitud%20a%20<?= $s->getName(); ?>&body=Hola,%20como%20estan?">
+                                    <?php echo $s->getEmail(); ?>
+                                </a>
+                            </th>
                             <th><?php echo $s->getContact(); ?></th>
                             <th><?php echo $s->getPhone(); ?></th>
                             <th><?php echo $s->getDirection(); ?></th>

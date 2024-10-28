@@ -80,7 +80,7 @@ class SupplierRepository implements ISupplierRepository
     }
 
     /**
-     * Elimina Un Usuario De La BD
+     * Elimina Un Proveedor De La BD
      * @return none
      */
     public function DeleteSuppierByCode(string $code): void
